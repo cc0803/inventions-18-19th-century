@@ -1,6 +1,12 @@
 * {
     margin: 0px;
-    color: #444;
+    color: var(--font-color);
+    line-height: var(--line-height);
+}
+
+:root {
+    --font-color: #444;
+    --line-height: 1.5em;
 }
 
 html {
@@ -14,6 +20,8 @@ header {
 nav {
     position: sticky;
     top: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -58,8 +66,10 @@ li>button {
 h1 {
     width: clamp(calc(250px - 2rem), calc(50vw - 2rem), calc(750px - 2rem));
     margin: 0 auto;
-    color: #444;
+    color: var(--font-color);
     padding: 3rem 0 1rem 0;
+    font-size: calc(26px + 2vw);
+    line-height: 1.2em;
 }
 
 .atomic-properties>li::before {
@@ -72,4 +82,20 @@ h1 {
 
 h2 {
     padding: 0;
+    font-size: calc(20px + 1.5vw);
+}
+
+h3 {
+    font-size: calc(15px + 1.3vw);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: calc(12px + 1.2vw);
+    font-weight: 500;
+}
+
+img:first-of-type {
+    width: 100vw;
+    margin: -1rem;
 }
