@@ -58,12 +58,14 @@ nav > ul {
     padding: 1rem;
 }
 
-li>button {
+li>button, 
+li a {
     background: inherit;
     border: 0;
     font-size: inherit;
     color: var(--font-color-white);
     font-weight: 700;
+    text-decoration: none;
 }
 
 h1 {
@@ -105,4 +107,8 @@ img:first-of-type {
 
 button:hover {
     color: #add8ea;
+}
+
+.hidden {
+    visibility: hidden;
 }
