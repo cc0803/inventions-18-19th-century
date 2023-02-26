@@ -2,11 +2,13 @@
     margin: 0px;
     color: var(--font-color);
     line-height: var(--line-height);
+    letter-spacing: 0.8px;
 }
 
 :root {
     --font-color: #444;
     --line-height: 1.5em;
+    --font-color-white: white;
 }
 
 html {
@@ -52,7 +54,7 @@ nav > ul {
     justify-content: space-evenly;
     font-size: 22px;
     background-color: #6a6a6a;
-    color: white;
+    color: var(--font-color-white);
     padding: 1rem;
 }
 
@@ -60,7 +62,8 @@ li>button {
     background: inherit;
     border: 0;
     font-size: inherit;
-    color: white;
+    color: var(--font-color-white);
+    font-weight: 700;
 }
 
 h1 {
@@ -92,10 +95,14 @@ h3 {
 
 h4 {
     font-size: calc(12px + 1.2vw);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 img:first-of-type {
     width: 100vw;
     margin: -1rem;
+}
+
+button:hover {
+    color: #add8ea;
 }
