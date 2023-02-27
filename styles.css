@@ -9,6 +9,7 @@
     --font-color: #444;
     --line-height: 1.5em;
     --font-color-white: white;
+    --nav-background: #a6a6a6;
 }
 
 html {
@@ -53,7 +54,7 @@ nav > ul {
     list-style: none;
     justify-content: space-evenly;
     font-size: 22px;
-    background-color: #6a6a6a;
+    background-color: var(--nav-background);
     color: var(--font-color-white);
     padding: 1rem;
 }
@@ -109,6 +110,25 @@ button:hover {
     color: #add8ea;
 }
 
+.menu-navigation{
+    padding: 0.5rem;
+    list-style: none;
+    text-align: center;
+    font-size: calc(22px + 1vw);
+    background-color: var(--nav-background);
+}
+
+.menu-navigation li{
+    list-style: none;
+    color: var(--font-color-white);
+    width: 100%;
+}
+
+.menu-navigation ul {
+    padding: 0;
+}
+
 .hidden {
     visibility: hidden;
+    height: 0;
 }
