@@ -132,3 +132,43 @@ button:hover {
     visibility: hidden;
     height: 0;
 }
+
+.dalton-model {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-list {
+    font-size: calc(16px + 0.2vw);
+    width: clamp(100px, 25%, 150px); 
+    align-self: center;
+    background-color: var(--nav-background);
+    color: var(--font-color-white);
+    border-radius: 10px;
+    border: 0;
+}
+
+.property {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 0.7s;
+}
+
+.property:nth-child(2){
+    transition-delay: 100ms;
+}
+
+.property:nth-child(3){
+    transition-delay: 200ms;
+}
+
+.property:nth-child(4){
+    transition-delay: 300ms;
+}
+
+.transition {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
